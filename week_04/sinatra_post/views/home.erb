@@ -1,0 +1,11 @@
+<h1> <%= @title %> </h1>
+
+<% if @error %>
+  <h2><%= @error %></h2>
+<% end %>
+
+<form action="/navigate" method="post">
+  <input type="text" name="destination" autofocus> 
+  <!-- Whatever you put as name will be key in params hash in ruby app.  -->
+  <button>Navigate Me!</button>
+</form>

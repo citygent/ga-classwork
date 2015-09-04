@@ -1,0 +1,913 @@
+Last login: Thu Aug 27 09:31:20 on ttys000
+➜  ~  brew update
+Updated Homebrew from f2a29d84 to 27fbf203.
+==> New Formulae
+gollum	gor	nifi
+==> Updated Formulae
+advancecomp		  hbase			    planck
+apngasm			  heroku-toolbelt	    poppler
+artifactory		  hive			    qbs
+aws-cloudsearch		  isync			    quantlib
+awscli			  jenkins		    rabbitmq
+bash			  jenkins-job-builder	    radare2
+chromedriver		  kvazaar		    riemann
+commonmark		  libgxps		    sbtenv
+d-bus			  libuv			    scalaenv
+deheader		  logstash		    sourcekitten
+depqbf			  mongodb		    svtplay-dl
+di			  n			    swiftlint
+diff-pdf		  nss			    syncthing
+dnscrypt-wrapper	  nvm			    tarsnap
+dpkg			  open-mpi		    tesseract
+dropbear		  opencc		    thefuck
+duck			  osquery		    tomcat
+duplicity		  packer		    vim
+embulk			  pandoc-citeproc	    xctool
+emscripten		  passenger		    youtube-dl
+fontforge		  pdf2htmlex
+glib-networking		  pig
+==> Deleted Formulae
+cdimgtools
+➜  ~  brew install rbenv ruby-build
+==> Downloading https://github.com/sstephenson/rbenv/archive/v0.4.0.tar.gz
+==> Downloading from https://codeload.github.com/sstephenson/rbenv/tar.gz/v0.
+######################################################################## 100.0%
+==> Caveats
+To use Homebrew's directories rather than ~/.rbenv add to your profile:
+  export RBENV_ROOT=/usr/local/var/rbenv
+
+To enable shims and autocompletion add to your profile:
+  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+==> Summary
+🍺  /usr/local/Cellar/rbenv/0.4.0: 31 files, 152K, built in 2 seconds
+==> Installing dependencies for ruby-build: autoconf, pkg-config, open
+==> Installing ruby-build dependency: autoconf
+==> Downloading https://homebrew.bintray.com/bottles/autoconf-2.69.yosemite.b
+#############                                                             18.#################################                                         45.######################################################                    75.######################################################################## 100.0%
+==> Pouring autoconf-2.69.yosemite.bottle.1.tar.gz
+==> Caveats
+Emacs Lisp files have been installed to:
+/usr/local/share/emacs/site-lisp/
+
+Add the following to your init file to have packages installed by Homebrew added to your load-path:
+(let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+  (normal-top-level-add-subdirs-to-load-path))
+==> Summary
+🍺  /usr/local/Cellar/autoconf/2.69: 70 files, 3.1M
+==> Installing ruby-build dependency: pkg-config
+==> Downloading https://homebrew.bintray.com/bottles/pkg-config-0.28.yosemite
+#########################                                                 34.#############################################################             85.######################################################################## 100.0%
+==> Pouring pkg-config-0.28.yosemite.bottle.2.tar.gz
+🍺  /usr/local/Cellar/pkg-config/0.28: 10 files, 612K
+==> Installing ruby-build dependency: openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2d_1.yosemit
+####                                                                       6.#############                                                             19.########################                                                  34.##############################                                            42.#############################################                             63.##########################################################                80.######################################################################## 100.0%
+==> Pouring openssl-1.0.2d_1.yosemite.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2d_1: 464 files, 18M
+==> Installing ruby-build
+==> Downloading https://homebrew.bintray.com/bottles/ruby-build-20150818.yose
+######################################################################## 100.0%
+==> Pouring ruby-build-20150818.yosemite.bottle.tar.gz
+🍺  /usr/local/Cellar/ruby-build/20150818: 168 files, 712K
+➜  ~  brew list
+autoconf	node		pkg-config	tree
+gdbm		openssl		rbenv		zsh
+git		pcre		ruby-build
+➜  ~  echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc 
+➜  ~  subl ~/.zhrc
+➜  ~  subl ~/.zshrc
+➜  ~  subl ~/.zshrc
+➜  ~  subl ~/.zshrc
+➜  ~  . ~/.zshrc
+➜  ~  subl ~/.zshrc
+➜  ~  rbenv -v
+rbenv 0.4.0
+➜  ~  rbenv install 2.2.0
+Downloading ruby-2.2.0.tar.gz...
+-> https://dqw8nmjcqpjn7.cloudfront.net/7671e394abfb5d262fbcd3b27a71bf78737c7e9347fa21c39e58b0bb9c4840fc
+Installing ruby-2.2.0...
+Installed ruby-2.2.0 to /Users/james/.rbenv/versions/2.2.0
+
+➜  ~  rbenv rehash
+➜  ~  rbenv global 
+system
+➜  ~  rbenv global 2.2.0
+➜  ~  rbenv global      
+2.2.0
+➜  ~  gem install bundler
+Fetching: bundler-1.10.6.gem (100%)
+Successfully installed bundler-1.10.6
+Parsing documentation for bundler-1.10.6
+Installing ri documentation for bundler-1.10.6
+Done installing documentation for bundler after 3 seconds
+1 gem installed
+➜  ~  rbenv rehash 
+➜  ~  . ~/.zshrc
+➜  ~  irb
+irb(main):001:0> 1 + 345987205
+=> 345987206
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> ^C
+irb(main):002:0> ^D
+➜  ~  irb
+irb(main):001:0> 1.class
+=> Fixnum
+irb(main):002:0> 'string'.class 
+=> String
+irb(main):003:0> true.class
+=> TrueClass
+irb(main):004:0> false.class
+=> FalseClass
+irb(main):005:0> nil.class
+=> NilClass
+irb(main):006:0> age = 18
+=> 18
+irb(main):007:0> age
+=> 18
+irb(main):008:0> ag = -1
+=> -1
+irb(main):009:0> ag = nil 
+=> nil
+irb(main):010:0> age = nil
+=> nil
+irb(main):011:0> if age.nil?
+irb(main):012:1> 13 % 12
+irb(main):013:1> 13 % 12
+irb(main):014:1> ag = nilirb(main):014:1> ^D
+SyntaxError: (irb):13: syntax error, unexpected end-of-input, expecting keyword_end
+	from /Users/james/.rbenv/versions/2.2.0/bin/irb:11:in `<main>'
+➜  ~  irb
+irb(main):001:0> 10 % 9
+=> 1
+irb(main):002:0> 90 % 67
+=> 23
+irb(main):003:0> 5.0 / 2.0
+=> 2.5
+irb(main):004:0> '12'.to_i
+=> 12
+irb(main):005:0> 'jim'.to_i
+=> 0
+irb(main):006:0> 'five'.to_i
+=> 0
+irb(main):007:0> 239.to_s
+=> "239"
+irb(main):008:0> ^D
+➜  ~  cd GA/Classwork/       
+➜  Classwork git:(master) ✗ mkdir week_3 
+➜  Classwork git:(master) ✗ mv week_3 week_03
+➜  Classwork git:(master) ✗ ls
+week01  week02  week_03
+➜  Classwork git:(master) ✗ cd week_03 
+➜  week_03 git:(master) ✗ mkdir intro_to_ruby           
+➜  week_03 git:(master) ✗ cd intro_to_ruby 
+➜  intro_to_ruby git:(master) ✗ touch file.rb 
+➜  intro_to_ruby git:(master) ✗ subl .
+➜  intro_to_ruby git:(master) ✗ ruby file.rb
+➜  intro_to_ruby git:(master) ✗ ruby file.rb
+➜  intro_to_ruby git:(master) ✗ ruby file.rb
+5%                                                                                                                  ➜  intro_to_ruby git:(master) ✗ ruby file.rb
+5
+11
+-7
+➜  intro_to_ruby git:(master) ✗ ruby file.rb
+5
+11
+-7
+hello tsh got a toshiba?
+hello tsh got a toshiba?
+➜  intro_to_ruby git:(master) ✗ subl .      
+➜  intro_to_ruby git:(master) ✗ ruby file.rb
+5
+11
+-7
+chompy
+chompy
+➜  intro_to_ruby git:(master) ✗ irb
+irb(main):001:0> true || true
+=> true
+irb(main):002:0> true || false 
+=> true
+irb(main):003:0> false || false
+=> false
+irb(main):004:0> false || true
+=> true
+irb(main):005:0> false && false
+=> false
+irb(main):006:0> false && true
+=> false
+irb(main):007:0> true && false\
+irb(main):008:0* true && false
+SyntaxError: (irb):8: syntax error, unexpected keyword_true, expecting end-of-input
+true && false
+    ^
+	from /Users/james/.rbenv/versions/2.2.0/bin/irb:11:in `<main>'
+irb(main):009:0> true && false
+=> false
+irb(main):010:0> 2+2== 4
+=> true
+irb(main):011:0> 2.even?
+=> true
+irb(main):012:0> 3.even?
+=> false
+irb(main):013:0> 2.odd
+NoMethodError: undefined method `odd' for 2:Fixnum
+	from (irb):13
+	from /Users/james/.rbenv/versions/2.2.0/bin/irb:11:in `<main>'
+irb(main):014:0> 2.odd?
+=> false
+irb(main):015:0> ^D
+➜  intro_to_ruby git:(master) ✗ touch control_flow.rb
+➜  intro_to_ruby git:(master) ✗ subl .
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb 
+hello
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+hello
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+bye
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+hello
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+bye
+hello
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Enter a number: 6
+Your nmber is positive
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Enter a number: 3
+too small!
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Enter a number: 10
+too small!
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Enter a number: 11  
+too Large!
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Exit the program> (yes or no):
+yes
+bye!
+control_flow.rb:42:in `<main>': uninitialized constant Exit (NameError)
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:56: syntax error, unexpected keyword_end
+control_flow.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+done
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+done
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:65: warning: found = in conditional, should be ==
+control_flow.rb:69: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:69: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:69: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:69: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:69: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+control_flow.rb:69: syntax error, unexpected end-of-input, expecting keyword_end
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Hey user, what is the square root of 64?
+4
+sorry, try again
+8
+sorry, try again
+^[[B^[[A^[[B^Ccontrol_flow.rb:67:in `gets': Interrupt
+	from control_flow.rb:67:in `gets'
+	from control_flow.rb:67:in `<main>'
+
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Hey user, what is the square root of 64?
+4
+sorry, try again
+8
+correct
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Hey user, what is the square root of 64?
+3
+control_flow.rb:76:in `<main>': undefined method `cbrt' for main:Object (NoMethodError)
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Hey user, what is the square root of 64?
+4
+control_flow.rb:76:in `<main>': undefined method `sqrt' for main:Object (NoMethodError)
+➜  intro_to_ruby git:(master) ✗ ruby control_flow.rb
+Hey user, what is the square root of 64?
+3
+sorry, try again
+5
+sorry, try again
+8   
+correct
+➜  intro_to_ruby git:(master) ✗ ..
+➜  week_03 git:(master) ✗ gem install pry
+Fetching: method_source-0.8.2.gem (100%)
+Successfully installed method_source-0.8.2
+Fetching: slop-3.6.0.gem (100%)
+Successfully installed slop-3.6.0
+Fetching: coderay-1.1.0.gem (100%)
+Successfully installed coderay-1.1.0
+Fetching: pry-0.10.1.gem (100%)
+Successfully installed pry-0.10.1
+Parsing documentation for method_source-0.8.2
+Installing ri documentation for method_source-0.8.2
+Parsing documentation for slop-3.6.0
+Installing ri documentation for slop-3.6.0
+invalid options: -SNw2
+(invalid options are ignored)
+Parsing documentation for coderay-1.1.0
+Installing ri documentation for coderay-1.1.0
+Parsing documentation for pry-0.10.1
+Installing ri documentation for pry-0.10.1
+Done installing documentation for method_source, slop, coderay, pry after 4 seconds
+4 gems installed
+➜  week_03 git:(master) ✗ rbenv rehash   
+➜  week_03 git:(master) ✗ pry
+[1] pry(main)> 5+5
+=> 10
+[2] pry(main)> [].class
+=> Array
+[3] pry(main)> [].methods
+=> [:inspect,
+ :to_s,
+ :to_a,
+ :to_h,
+ :to_ary,
+ :frozen?,
+ :==,
+ :eql?,
+ :hash,
+ :[],
+ :[]=,
+ :at,
+ :fetch,
+ :first,
+ :last,
+ :concat,
+=> [:inspect,
+ :to_s,
+ :to_a,
+ :to_h,
+ :to_ary,
+ :frozen?,
+ :==,
+ :eql?,
+ :hash,
+ :[],
+ :[]=,
+ :at,
+ :fetch,
+ :first,
+ :last,
+ :concat,
+ :<<,
+ :push,
+ :pop,
+ :shift,
+ :unshift,
+ :insert,
+ :each,
+ :each_index,
+ :reverse_each,
+ :length,
+ :size,
+ :empty?,
+ :find_index,
+ :index,
+ :rindex,
+ :join,
+ :reverse,
+ :reverse!,
+ :rotate,
+ :rotate!,
+ :sort,
+ :sort!,
+ :sort_by!,
+ :collect,
+ :collect!,
+ :map,
+ :map!,
+ :select,
+ :select!,
+ :keep_if,
+ :values_at,
+ :delete,
+ :delete_at,
+ :delete_if,
+ :reject,
+ :reject!,
+ :zip,
+ :transpose,
+ :replace,
+ :clear,
+ :fill,
+ :include?,
+ :<=>,
+ :slice,
+ :slice!,
+ :assoc,
+ :rassoc,
+ :+,
+ :*,
+ :-,
+ :&,
+ :|,
+ :uniq,
+ :uniq!,
+ :compact,
+ :compact!,
+ :flatten,
+ :flatten!,
+ :count,
+ :shuffle!,
+ :shuffle,
+ :sample,
+ :cycle,
+ :permutation,
+ :combination,
+ :repeated_permutation,
+ :repeated_combination,
+ :product,
+ :take,
+ :take_while,
+ :drop,
+ :drop_while,
+ :bsearch,
+ :any?,
+ :pack,
+ :pretty_print,
+ :pretty_print_cycle,
+ :shelljoin,
+ :entries,
+ :sort_by,
+ :grep,
+ :find,
+ :detect,
+ :find_all,
+ :flat_map,
+ :collect_concat,
+ :inject,
+ :reduce,
+ :partition,
+ :group_by,
+ :all?,
+ :one?,
+ :none?,
+ :min,
+ :max,
+ :minmax,
+ :min_by,
+ :max_by,
+ :minmax_by,
+ :member?,
+ :each_with_index,
+ :each_entry,
+ :each_slice,
+ :each_cons,
+ :each_with_object,
+ :chunk,
+ :slice_before,
+ :slice_after,
+ :slice_when,
+ :lazy,
+ :pry,
+ :__binding__,
+ :pretty_print_instance_variables,
+ :pretty_print_inspect,
+ :nil?,
+ :===,
+ :=~,
+ :!~,
+ :class,
+ :singleton_class,
+ :clone,
+ :dup,
+ :itself,
+ :taint,
+ :tainted?,
+ :untaint,
+ :untrust,
+ :untrusted?,
+ :trust,
+ :freeze,
+ :methods,
+ :singleton_methods,
+ :protected_methods,
+ :private_methods,
+ :public_methods,
+ :instance_variables,
+ :instance_variable_get,
+ :instance_variable_set,
+ :instance_variable_defined?,
+ :remove_instance_variable,
+ :instance_of?,
+ :kind_of?,
+ :is_a?,
+ :tap,
+ :send,
+ :public_send,
+ :respond_to?,
+ :extend,
+ :display,
+ :method,
+ :public_method,
+ :singleton_method,
+ :define_singleton_method,
+ :object_id,
+ :to_enum,
+ :enum_for,
+ :pretty_inspect,
+ :equal?,
+ :!,
+ :!=,
+ :instance_eval,
+ :instance_exec,
+ :__send__,
+ :__id__]
+[4] pry(main)> fruits = ['pear', 'banana', 'grape']
+=> ["pear", "banana", "grape"]
+[5] pry(main)> football_teams %w(manchester_united liverpool arsenal leicester_city 
+[5] pry(main)* football_teams
+[5] pry(main)* football_teams %w(manchester_united liverpool arsenal leicester_city)
+[5] pry(main)* football_teams
+[5] pry(main)* football_teams = %w(manchester_united liverpool arsenal leicester_city)
+[5] pry(main)* football_teams
+[5] pry(main)* 
+[5] pry(main)> football_teams = %w(manchester_united liverpool arsenal leicester_city)
+=> ["manchester_united", "liverpool", "arsenal", "leicester_city"]
+[6] pry(main)> football_teams
+=> ["manchester_united", "liverpool", "arsenal", "leicester_city"]
+[7] pry(main)> fruits
+=> ["pear", "banana", "grape"]
+[8] pry(main)> fruits.length 
+=> 3
+[9] pry(main)> fruits.any?
+=> true
+[10] pry(main)> sweets.any?
+NameError: undefined local variable or method `sweets' for main:Object
+from (pry):10:in `__pry__'
+[11] pry(main)> sweets()
+NoMethodError: undefined method `sweets' for main:Object
+from (pry):11:in `__pry__'
+[12] pry(main)> sweets(5)
+NoMethodError: undefined method `sweets' for main:Object
+from (pry):12:in `__pry__'
+[13] pry(main)> 
+[13] pry(main)> sweets(5)
+NoMethodError: undefined method `sweets' for main:Object
+from (pry):13:in `__pry__'
+[14] pry(main)> sweets = array.new
+NameError: undefined local variable or method `array' for main:Object
+from (pry):14:in `__pry__'
+[15] pry(main)> sweets = Array.new
+=> []
+[16] pry(main)> sweets.push('cola bottle')
+=> ["cola bottle"]
+[17] pry(main)> sweets.unshift('milk bottle')
+=> ["milk bottle", "cola bottle"]
+[18] pry(main)> sweets.insert(1, 'button')
+=> ["milk bottle", "button", "cola bottle"]
+[19] pry(main)> sweets.unshift('strawberry')
+=> ["strawberry", "milk bottle", "button", "cola bottle"]
+[20] pry(main)> sweets.index('button')
+=> 2
+[21] pry(main)> things = [:hello, 'how', 'is it going?', {england: london}, true, [1,2,3], [98, false]]
+NameError: undefined local variable or method `london' for main:Object
+from (pry):21:in `__pry__'
+[22] pry(main)> things = [:hello, 'how', 'is it going?', {england: 'london'}, true, [1,2,3], [98, false]]
+=> [:hello, "how", "is it going?", {:england=>"london"}, true, [1, 2, 3], [98, false]]
+[23] pry(main)> things.flatten
+=> [:hello, "how", "is it going?", {:england=>"london"}, true, 1, 2, 3, 98, false]
+[24] pry(main)> things
+=> [:hello, "how", "is it going?", {:england=>"london"}, true, [1, 2, 3], [98, false]]
+[25] pry(main)> things.flatten!
+=> [:hello, "how", "is it going?", {:england=>"london"}, true, 1, 2, 3, 98, false]
+[26] pry(main)> things.delete_at(8)
+=> 98
+[27] pry(main)> things.shuffle 
+=> [true, 2, false, :hello, 3, 1, {:england=>"london"}, "how", "is it going?"]
+[28] pry(main)> things.shuffle.sample 
+=> false
+[29] pry(main)> things.shuffle.sample
+=> true
+[30] pry(main)> things.shuffle.sample
+=> {:england=>"london"}
+[31] pry(main)> things.shuffle.sample
+=> false
+[32] pry(main)> things.shuffle.sample
+=> 1
+[33] pry(main)> things.shuffle.sample
+=> :hello
+[34] pry(main)> things.shuffle.sample
+=> false
+[35] pry(main)> things.shuffle.sample
+=> false
+[36] pry(main)> things.shuffle.sample
+=> 1
+[37] pry(main)> things.shuffle.sample
+=> false
+[38] pry(main)> things.shuffle.sample
+=> 2
+[39] pry(main)> things.shuffle.sample
+=> 1
+[40] pry(main)> things.shuffle.sample
+=> {:england=>"london"}
+[41] pry(main)> things.shuffle.sample
+=> 3
+[42] pry(main)> things.shuffle.sample
+=> 2
+[43] pry(main)> things.shuffle.sample
+=> 3
+[44] pry(main)> things.shuffle.sample
+=> "how"
+[45] pry(main)> things.shuffle.sample
+=> true
+[46] pry(main)> things.shuffle.sample
+=> "is it going?"
+[47] pry(main)> things.shuffle.sample
+=> 1
+[48] pry(main)> things.shuffle.sample
+=> true
+[49] pry(main)> things.shuffle.sample
+=> {:england=>"london"}
+[50] pry(main)> things.shuffle
+=> [:hello, "how", 1, "is it going?", 3, 2, false, true, {:england=>"london"}]
+[51] pry(main)> things.shuffle
+=> [:hello, 3, 1, "is it going?", false, {:england=>"london"}, 2, "how", true]
+[52] pry(main)> things.shuffle
+=> [{:england=>"london"}, :hello, 3, 1, "is it going?", "how", true, false, 2]
+[53] pry(main)> things.shuffle
+=> [:hello, "how", true, {:england=>"london"}, 2, 1, false, 3, "is it going?"]
+[54] pry(main)> things.shuffle
+=> [1, {:england=>"london"}, "is it going?", false, 2, :hello, true, 3, "how"]
+[55] pry(main)> things.shuffle
+=> [false, true, "how", 1, :hello, {:england=>"london"}, "is it going?", 2, 3]
+[56] pry(main)> things.shuffle
+=> [:hello, false, 3, "is it going?", "how", {:england=>"london"}, true, 2, 1]
+[57] pry(main)> things.shuffle
+=> ["how", "is it going?", 2, false, {:england=>"london"}, 1, 3, :hello, true]
+[58] pry(main)> things.shuffle
+=> [1, :hello, 2, "is it going?", 3, true, "how", false, {:england=>"london"}]
+[59] pry(main)> things.shuffle.sample
+=> true
+[60] pry(main)> things.shuffle.sample
+=> 1
+[61] pry(main)> things.shuffle.sample
+=> true
+[62] pry(main)> things.shuffle.sample
+=> 1
+[63] pry(main)> things.shuffle.sample
+=> {:england=>"london"}
+[64] pry(main)> things.shuffle.sample
+=> "is it going?"
+[65] pry(main)> things.shuffle.sample
+=> false
+[66] pry(main)> things.shuffle.sample
+=> true
+[67] pry(main)> things.shuffle.sample
+=> 1
+[68] pry(main)> things.shuffle.sample
+=> 3
+[69] pry(main)> fruits << nil << nil << nil 
+=> ["pear", "banana", "grape", nil, nil, nil]
+[70] pry(main)> fruits.compact
+=> ["pear", "banana", "grape"]
+[71] pry(main)> fruits
+=> ["pear", "banana", "grape", nil, nil, nil]
+[72] pry(main)> fruits.compact!
+=> ["pear", "banana", "grape"]
+[73] pry(main)> fruits
+=> ["pear", "banana", "grape"]
+[74] pry(main)> fruits
+=> ["pear", "banana", "grape"]
+[75] pry(main)> favourite_fruits = %w(grape raspberry fig)
+=> ["grape", "raspberry", "fig"]
+[76] pry(main)> fruits & favourite_fruits 
+=> ["grape"]
+[77] pry(main)> my_array = "hello there are osme proper nutters in here today fam"
+=> "hello there are osme proper nutters in here today fam"
+[78] pry(main)> my_array.split(' ')
+=> ["hello", "there", "are", "osme", "proper", "nutters", "in", "here", "today", "fam"]
+[79] pry(main)> my_real_array = my_array.split(' ')
+=> ["hello", "there", "are", "osme", "proper", "nutters", "in", "here", "today", "fam"]
+[80] pry(main)> my_real_array.include("are") 
+NoMethodError: undefined method `include' for #<Array:0x007f9469ab85b0>
+from (pry):80:in `__pry__'
+[81] pry(main)> my_real_array.include?("are")
+=> true
+[82] pry(main)> (1..10).to_a
+=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[83] pry(main)> (1..10).to_a + (11..15).to_a
+=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+[84] pry(main)> ('a'..'z').to_a
+=> ["a",
+ "b",
+ "c",
+ "d",
+ "e",
+ "f",
+ "g",
+ "h",
+ "i",
+ "j",
+ "k",
+ "l",
+ "m",
+ "n",
+ "o",
+ "p",
+ "q",
+ "r",
+ "s",
+ "t",
+ "u",
+ "v",
+ "w",
+ "x",
+ "y",
+ "z"]
+[85] pry(main)> ('a'..'z').to_a.reverse
+=> ["z",
+ "y",
+ "x",
+ "w",
+ "v",
+ "u",
+ "t",
+ "s",
+ "r",
+ "q",
+ "p",
+ "o",
+ "n",
+ "m",
+ "l",
+ "k",
+ "j",
+ "i",
+ "h",
+ "g",
+ "f",
+ "e",
+ "d",
+ "c",
+ "b",
+ "a"]
+[86] pry(main)> ('a'..'z').to_a.inject(:+)
+=> "abcdefghijklmnopqrstuvwxyz"
+[87] pry(main)> greeting = :hello
+=> :hello
+[88] pry(main)> greeting << :world
+NoMethodError: undefined method `<<' for :hello:Symbol
+from (pry):88:in `__pry__'
+[89] pry(main)> greeting = 'hello'
+=> "hello"
+[90] pry(main)> greeting >> ' world'
+NoMethodError: undefined method `>>' for "hello":String
+from (pry):90:in `__pry__'
+[91] pry(main)> greeting << ' world'
+=> "hello world"
+[92] pry(main)> 'hello'.object_id
+=> 70137702127640
+[93] pry(main)> 'hello'.object_id
+=> 70137705709600
+[94] pry(main)> 'hello'.object_id
+=> 70137705616420
+[95] pry(main)> 'hello'.object_id
+=> 70137705532220
+[96] pry(main)> 'hello'.object_id
+=> 70137702015820
+[97] pry(main)> :hello.object_id
+=> 1643548
+[98] pry(main)> :hello.object_id
+=> 1643548
+[99] pry(main)> :hello.object_id
+=> 1643548
+[100] pry(main)> :hello.object_id
+=> 1643548
+[101] pry(main)> :hello.object_id
+=> 1643548
+[102] pry(main)> :hello.object_id == :hello.object_id
+=> true
+[103] pry(main)> 'hello'.object_id == 'hello'.object_id
+=> false
+[104] pry(main)> 'hello' =='hello'
+=> true
+[105] pry(main)> :hello == :hello
+=> true
+[106] pry(main)> capital_cities = {
+[106] pry(main)*   england: 'london',
+[106] pry(main)*   greenland: 'Nuuk',
+[106] pry(main)*   france: 'paris'
+[106] pry(main)* }  
+=> {:england=>"london", :greenland=>"Nuuk", :france=>"paris"}
+[107] pry(main)> capital_cities[:greenland]
+=> "Nuuk"
+[108] pry(main)> capital_cities[:germany] = 'berlin'
+=> "berlin"
+[109] pry(main)> capital_cities[:Spain] = 'madrid'
+=> "madrid"
+[110] pry(main)> capital_cities['Spain'] = 'madrid'
+=> "madrid"
+[111] pry(main)> capital_cities
+=> {:england=>"london",
+ :greenland=>"Nuuk",
+ :france=>"paris",
+ :germany=>"berlin",
+ :Spain=>"madrid",
+ "Spain"=>"madrid"}
+[112] pry(main)> capital_cities
+=> {:england=>"london",
+ :greenland=>"Nuuk",
+ :france=>"paris",
+ :germany=>"berlin",
+ :Spain=>"madrid",
+ "Spain"=>"madrid"}
+[113] pry(main)> capital_cities.delete('Spain')
+=> "madrid"
+[114] pry(main)> capital_cities
+=> {:england=>"london",
+ :greenland=>"Nuuk",
+ :france=>"paris",
+ :germany=>"berlin",
+ :Spain=>"madrid"}
+[115] pry(main)> capital_cities.delete(Spain)
+NameError: uninitialized constant Spain
+from (pry):119:in `__pry__'
+[116] pry(main)> capital_cities.delete(:e
+Display all 201 possibilities? (y or n) 
+[116] pry(main)> capital_cities.delete(:england)
+=> "london"
+[117] pry(main)> students = {
+[117] pry(main)*   mark: ['phone', 'wallet', :gin],
+[117] pry(main)*   james: ['buttons', {spanish: 10, english: 9}],
+[117] pry(main)*   luke: [{ten: 0, twenty: 20, two_pounds: 2}, :keys, :bible]
+[117] pry(main)* }  
+=> {:mark=>["phone", "wallet", :gin],
+ :james=>["buttons", {:spanish=>10, :english=>9}],
+ :luke=>[{:ten=>0, :twenty=>20, :two_pounds=>2}, :keys, :bible]}
+[118] pry(main)> students[:james]
+=> ["buttons", {:spanish=>10, :english=>9}]
+[119] pry(main)> students[:james][1]
+=> {:spanish=>10, :english=>9}
+[120] pry(main)> students[:james][1][:english]
+=> 9
+[121] pry(main)> students[:luke][0][:twenty]
+=> 20
+[122] pry(main)> students[:luke].insert(1,fruits)
+=> [{:ten=>0, :twenty=>20, :two_pounds=>2}, ["pear", "banana", "grape"], :keys, :bible]
+[123] pry(main)> students[:luke][1]
+=> ["pear", "banana", "grape"]
+[128] pry(main)> students[:luke][1]
+=> ["pear", "banana", "grape"]
+[129] pry(main)> students[:luke][1].delete(:1)
+SyntaxError: unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+students[:luke][1].delete(:1)
+                            ^
+[129] pry(main)> students[:luke][1].delete_at(1)
+=> "banana"
+[130] pry(main)> 

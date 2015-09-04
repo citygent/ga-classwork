@@ -1,0 +1,41 @@
+var clickButton = document.getElementById("event_click");
+
+clickButton.addEventListener("click", function(){
+  console.log("click button event triggered ;)");
+})
+
+
+var doubleClickButton = document.getElementById("event_dblclick");
+
+doubleClickButton.addEventListener("dblclick", function(){
+  alert("U WOT M8?! U AVIN A GIGGLE?!");
+})
+
+var doubleClickButton = document.getElementById("event_dblclick");
+
+doubleClickButton.addEventListener("dblclick", function(){
+  alert("U WOT M8?! U AVIN A GIGGLE?!");
+})
+
+
+
+document.getElementById("event_mousedown_mouseup").addEventListener("mousedown", function(){
+  console.log("MOUSEY DOWNEY");
+});
+
+
+for(i=0,s len = Radio.length; i < len; i++) {
+  }
+// ABOVE IS MORE MEMEORY EFFICENT THAN BELOW. 
+for(i=0; i < Radio.length; i++)
+
+
+var Radio = document.getElementsByClassName("radio_event");
+
+for(i=0; i < Radio.length; i++) {
+  Radio[i].addEventListener("click",function(){
+    console.log("LO MAAAAATE");})}
+
+for(i=0; i < Radio.length; i++) {
+  Radio[i].addEventListener("click",function(){
+    console.log("LO MAAAAATE"+[i]+"HAS BEEN CLICKED");})}
